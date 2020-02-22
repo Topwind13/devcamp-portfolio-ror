@@ -18,6 +18,16 @@
   </div>
 
 
+  <ul>
+    <%= form.fields_for :technologies do |tf| %>
+    <il> 
+        <%= tf.label :name %>
+        <%= tf.text_field :name %>
+    </il>
+    <% end %>
+  </ul>
+
+
   <div class="actions">
     <%= form.submit %>
   </div>
